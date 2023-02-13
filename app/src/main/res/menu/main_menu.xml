@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/git_commands"
+            android:title="Git Commands" />
+        <item
+            android:id="@+id/quran_app"
+            android:title="Quran App" />
+
+        <item
+            android:id="@+id/hifz_app"
+            android:title="Hifz App" />
+
+        <item
+            android:id="@+id/salah_tracker"
+            android:title="Salah Tracker" />
+
+    </group>
+
+
+
+
+</menu>
