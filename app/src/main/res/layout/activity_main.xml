@@ -19,7 +19,7 @@
             android:id="@+id/toolbar"
             app:title="My Projects"
             app:titleTextColor="@color/cardview_light_background"
-            android:background="@color/cardview_dark_background"
+            android:background="@color/purple_200"
             />
 
     </RelativeLayout>

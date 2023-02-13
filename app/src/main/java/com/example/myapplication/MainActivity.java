@@ -1,4 +1,5 @@
 package com.example.myapplication;
+import android.net.Uri;
 import android.util.Log;
 
 import androidx.annotation.NonNull;
@@ -68,18 +69,31 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
                 switch (menuItem.getItemId()) {
-                    case R.id.nav_book:
-
+                    case R.id.git_commands:
+                        String url="https://github.com/sheriamjad/GitDetailWebPage_A-1.git";
+                        Intent intent= new Intent(Intent.ACTION_VIEW);
+                        intent.setData(Uri.parse(url));
+                        startActivity(intent);
                         break;
 
-                    case R.id.nav_return:
-                        Toast.makeText(getApplicationContext(), "Retur is Clicked", Toast.LENGTH_LONG).show();
-                        //drawerLayout.closeDrawer(GravityCompat.START);
+                    case R.id.quran_app:
+                        String url2="https://github.com/sheriamjad/QuranApp_A-2.git";
+                        Intent intent2= new Intent(Intent.ACTION_VIEW);
+                        intent2.setData(Uri.parse(url2));
+                        startActivity(intent2);
                         break;
 
-                    case R.id.nav_laptop:
-                        Toast.makeText(getApplicationContext(), "Laptop is clicked", Toast.LENGTH_LONG).show();
-                        drawerLayout.closeDrawer(GravityCompat.START);
+                    case R.id.salah_tracker:
+                        String url3="https://github.com/SabaInam7/Group1-TrackerSalah/tree/main/app";
+                        Intent intent3= new Intent(Intent.ACTION_VIEW);
+                        intent3.setData(Uri.parse(url3));
+                        startActivity(intent3);
+                        break;
+                    case R.id.hifz_app:
+                        String url4="https://github.com/sheriamjad/HifzApp/tree/main/app";
+                        Intent intent4= new Intent(Intent.ACTION_VIEW);
+                        intent4.setData(Uri.parse(url4));
+                        startActivity(intent4);
                         break;
 
                 }
